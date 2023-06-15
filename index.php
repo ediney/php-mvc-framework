@@ -13,4 +13,16 @@ switch($url)
     case '/users':
         UserController::index();
     break;
+
+    case '/users/create':
+        UserController::create();
+    break;
+
+    case '/users/save':
+        UserController::store();
+    break;
+
+    default:
+        echo "Error - 404";
+    break;
 }
